@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>RF Fitness - Etapa 2</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -23,14 +23,15 @@
                 </select>
 
                 <form action = "obrigado.html" method = "get">
-                <a href="obrigado.html">
-                <button type="submit">
-                    <i class="fas fa-arrow-right"></i> Finalizar cadastro
+                <button onclick="window.location.href='obrigado.html'">
+                    <i class="fas fa-arrow-right"></i> Finalizar
                 </button>
-                </a>
+
+                </form>
                 </form>
             </form>
         </div>
     </div>
 </body>
 </html>
+
