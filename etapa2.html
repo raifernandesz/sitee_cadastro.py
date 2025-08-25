@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>RF Fitness - Etapa 2</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="overlay">
+        <div class="form-container">
+            <h2>Etapa 2: Informações Físicas</h2>
+            <form method="POST">
+                <input type="number" name="peso" placeholder="Peso (kg)" step="0.1" required>
+                <input type="number" name="altura" placeholder="Altura (m)" step="0.01" required>
+
+                <select name="objetivo" required>
+                    <option value="" disabled selected>Seu objetivo</option>
+                    <option value="Emagrecimento">Emagrecimento</option>
+                    <option value="Hipertrofia">Hipertrofia</option>
+                    <option value="Condicionamento físico">Condicionamento físico</option>
+                    <option value="Saúde geral">Saúde geral</option>
+                </select>
+
+                <form action = "obrigado.html" method = "get">
+                <a href="obrigado.html">
+                <button type="submit">
+                    <i class="fas fa-arrow-right"></i> Finalizar cadastro
+                </button>
+                </a>
+                </form>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
